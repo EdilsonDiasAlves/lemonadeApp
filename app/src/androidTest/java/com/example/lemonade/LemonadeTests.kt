@@ -15,7 +15,7 @@
  */
 package com.example.lemonade
 
-import androidx.test.core.app.launchActivity
+import androidx.test.core.app.ActivityScenario.launch
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.longClick
@@ -37,7 +37,7 @@ class LemonadeTests : BaseTest() {
 
     @Before
     fun setup() {
-        launchActivity<MainActivity>()
+        launch(MainActivity::class.java)
     }
 
     /**
